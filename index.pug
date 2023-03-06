@@ -1,0 +1,108 @@
+
+doctype html
+html(lang='de')
+    meta(charset='UTF-8')
+        //- nötig für Umlaute
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+        //- Anpassung an Breite von Smartphone und Tablet
+            "The viewport is the user's visible area of a web page."
+            s. https://www.w3schools.com/css/css_rwd_viewport.asp
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/css/bootstrap.min.css" rel="stylesheet")
+    //- script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2/dist/js/bootstrap.bundle.min.js")
+
+    head
+        meta(charset="UTF-8")
+        ul.nav.nav-tabsnav.navbar.navbar-expand-lg.bg-light
+            .container-fluid
+                a.navbar-brand(href='#')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarNav.collapse.navbar-collapse
+                    ul.navbar-nav
+                        li.nav-item
+                            a.nav-link.active(
+                                href='#'
+                                aria-current="page"
+                            ) Startseite
+                        li.nav-item.dropdown
+                            a.nav-link(
+                                aria-expanded="false"
+                                role="button"
+                                href="#"
+                                data-bs-toggle="dropdown"
+                            ) Dokumente für Lehrpersonen
+                            ul.dropdown-menu
+                                li
+                                    a.dropdown-item(href="documents.html") Informationen zu Rassismus
+                                li
+                                    a.dropdown-item(href="sexism.html") Informationen zu Sexismus
+                                li
+                                    a.dropdown-item(href="queerphobia.html") Informationen zu Queerfeindlichkeit
+                                li
+                                    hr.dropdown-divider
+                                li
+                                    a.dropdown-item(href="#") Aktuelle Informationen
+                        li.nav-item.dropdown
+                            a.nav-link(
+                                aria-expanded="false"
+                                role="button"
+                                href="#"
+                                data-bs-toggle="dropdown"
+                            ) Informationen und Impressum
+                            ul.dropdown-menu
+                                li
+                                    a.dropdown-item(href="Impressum.html") Über diese Seite
+                                li
+                                    a.dropdown-item(href="Autorin.html") Über die Autorin
+                        li.nav-item.dropdown
+                            a.nav-link(
+                                aria-expanded="false"
+                                role="button"
+                                href="#"
+                                data-bs-toggle="dropdown"
+                            ) Tipps und Tricks gegen Hass im Netz
+                            ul.dropdown-menu
+                                li
+                                    a.dropdown-item(href="#") Wie erkenne ich Hass im Netz?
+                                li
+                                    a.dropdown-item(href="#") Was kann ich gegen Hass im Netz tun?
+                                li
+                                    a.dropdown-item(href="#") Wo finde ich Hilfe bei Hass gegen mich?
+
+body
+    h1.display-1.fw-bold HASS IM NETZ
+    p1 Eine Masterarbeit von A. Brügger
+    div Betreut von D. Goldsmith und Prof. Dr. F. Metzger der
+        a.btn.ps-2(href="https://www.phlu.ch/").ps-2 Pädagogischen Hochschule Luzern
+
+
+    main
+        hr
+        head
+                meta(charset='utf-8')
+                meta(name='viewport', content='width=device-width, initial-scale=1')
+                link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css', rel='stylesheet')
+                link(href='https://getbootstrap.com/docs/5.2/assets/css/docs.css', rel='stylesheet')
+                title Bootstrap Example
+                script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js')
+        .container.text-center
+            .row.row-cols-auto
+                .col
+                    .card(style='width: 20rem;')
+                        h2.card-header.fw-semibold Rassismus
+                            img.card-img-bottom(src="R.jpg" alt="...")
+
+                .col
+                    .card(style='width: 20rem;')
+                        h3.card-header.fw-semibold Sexismus
+                            img.card-img-bottom(src="R.jpg" alt="...")
+
+                .col
+                    .card(style='width: 20rem;')
+                        h3.card-header.fw-semibold Queerfeindlichkeit
+                            img.card-img-bottom(src="R.jpg" alt="...")
+
+
+
+
+
